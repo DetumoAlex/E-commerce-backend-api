@@ -6,4 +6,10 @@ const createProduct = async (productObj) => {
   return newProduct;
 };
 
-module.exports = { createProduct };
+const fetchAllProduct = async () => {
+    const products = await productModel.find();
+    return products;
+  };
+
+
+module.exports = { createProduct, fetchAllProduct };
