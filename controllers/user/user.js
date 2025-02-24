@@ -9,7 +9,7 @@ const signUp = async (req, res) =>{
     }
 } 
 
-const fetchUsers = async (req,res) => {
+const fetchAllUsers = async (req,res) => {
     try {
         const users = await fetchAllUser()
         res.status(200).json({data: users, message: `users fetched`, status:true})
@@ -18,4 +18,4 @@ const fetchUsers = async (req,res) => {
     }
 }
 
-module.exports = {signUp,fetchUsers}
+module.exports = {signUp,fetchAllUsers}
