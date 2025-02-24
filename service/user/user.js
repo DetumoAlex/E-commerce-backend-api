@@ -10,4 +10,9 @@ const fetchAllUser= async() =>{
     const users = await user.find()
     return users;
 } 
+
+// const findUserById = async() =>{
+//     const user = await user.findById({_id:id})
+//     return user;
+// }
 module.exports = {createUser, fetchAllUser}
