@@ -76,7 +76,7 @@ const deleteUserById = async (req, res) => {
       status: false,
     });
   }
-};
+};[]
 
 
 module.exports = { signUp, fetchAllUsers, userById, deleteUserById,signInController };
